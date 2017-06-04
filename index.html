@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Selektory</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+</head>
+
+<body>
+	<div class="container">
+		<p> Selektory w jQuery</p>
+		<ul>
+		<li>- wszystkie elementy div, posiadające zarówno klasę “grid” oraz klasę “grid-12”.<br>var divGrid = $("div.grid.grid-12");</li>
+		<li>- wszystkie elementy a, których atrybut “href" zaczyna się na “http”, znajdujące się w</li>
+		elemencie o klasie “nav”<br>var navA = $(".nav a[href^='http']");</li>
+		<li>- wszystkie elementy input, których typ to “radio” lub “checkbox” oraz dodatkowo nie
+		są aktualnie zaznaczone (checked).<br> var NotChecked = $("input[type='radio'][type='checkbox']:not(:checked)");</li>
+		<li>- wyłącznie pierwszy element p, który jest pusty (nie zawiera dzieci) oraz znajduje się w
+		elemencie div z identyfikatorem “text” <br>pEmpty = $("#text p:empty:first");</li>
+		<li>- wszystkie elementy z klasą “pagination-item”, które nie są elementem span<br>var pagination = $(".pagination-item:not(span)");</li>
+	    
+	</div>
+ 
+
+</body>
+</html>
